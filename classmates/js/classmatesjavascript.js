@@ -1,0 +1,39 @@
+//* Ethan McCaffrey classmates array *//
+var people = new Array();
+people[0] = "Vaida";
+people[1] = "Maks";
+people[2] = "Ryder";
+people[3] = "Thomas";
+people[4] = "Stefan";
+people[5] = "Rowan";
+people[6] = "Micheal";
+people[7] = "Laim";
+people[8] = "Kaidyn";
+people[9] = "Jerry";
+people[10] = "Jean";
+people[11] = "Jasiu";
+people[12] = "Ethan";
+people[13] = "Haiden";
+people[14] = "Harry";
+people[15] = "David";
+people[16] = "Daniel";
+people[17] = "Cody";
+people[18] = "Andrew";
+people[19] = "Aiden";
+people[20] = "leah";
+
+
+people.sort();
+for (i = 0; i < 21; i++) {
+    numberList = i;
+    document.write(`${numberList} ${people[i]} <br>`);
+}
+console.log(people);
+let userchoice = parseInt(prompt(`Choose a classmate by picking a number between 1 and 21`))
+document.write(people[userchoice]);
+if (userchoice > 0 && userchoice < 21) {
+    document.write(` The number you chose was ${userchoice} which is the number for. ${people[userchoice]}`);
+} else {
+    alert('Pick a number between 0-21!');
+    location.reload();
+}
